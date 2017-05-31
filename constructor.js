@@ -5,7 +5,10 @@ var cheerio = require('cheerio');
 var app     = express();
 var Twitter = require('twitter');
 var path = require('path')
+const rp = require('request-promise')
 var Twit = require('twit')
+
+var nodeUrlExpand = require('node-url-expand');
 
 
 var client = new Twitter({
@@ -35,11 +38,20 @@ function newUser(userName, url, checked){
 //this will contain our usernames
 var userNames = [];
 
+// url expander
+// var expandUrl = function (shortUrl) {
+//     return request ( { method: "HEAD", url: shortUrl, followAllRedirects: true },
+//         (function (error, response) {
+//           return (response.request.href);
+//         }));
+// }
+
 
 
 
 //first, let's get the usernames from the search page for 'javascript'
 var seed = function(){
+
 var url = 'https://twitter.com/search?f=tweets&vertical=default&q=javascript&src=typd';
 request(url, function(err,resp,body){
   var $ = cheerio.load(body);
@@ -55,9 +67,39 @@ request(url, function(err,resp,body){
       client.get('users/lookup', params, function(error, users, response) {
         if (!error) {
 
-            let newObj = new newUser(users[0].screen_name, users[0].url, 0);
-            userObjects.push(newObj);
-            console.log(newObj)
+            if (users[0].url === null) {
+              let newObj = new newUser(users[0].screen_name, users[0].url, 0);
+              userObjects.push(newObj);
+              console.log(newObj)
+
+            } else {
+              let expandThis = users[0].url
+              expandThis.toString();
+
+              nodeUrlExpand(expandThis, function (err, url) {
+
+                let expanded = (url);
+
+                let newObj = new newUser(users[0].screen_name, expanded, 0);
+                userObjects.push(newObj);
+                console.log(newObj)
+
+
+              });
+
+
+            }
+
+
+
+
+
+
+
+            //original working no expansion
+            // let newObj = new newUser(users[0].screen_name, users[0].url, 0);
+            // userObjects.push(newObj);
+            // console.log(newObj)
         } else {console.log(error)}
       });
     }
@@ -68,9 +110,6 @@ request(url, function(err,resp,body){
 
 }
 seed();
-
-
-
 
 
 

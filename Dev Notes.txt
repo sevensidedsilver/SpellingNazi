@@ -1,0 +1,3 @@
+Some people list URLs in their twitter profiles descriptions
+rather than in the profile URL space... consider adding functionality
+to find these urls and add them to our object.
