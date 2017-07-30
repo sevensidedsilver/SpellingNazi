@@ -16,6 +16,7 @@
     "path": "^0.12.7",
     "request": "^2.81.0",
     "request-promise-native": "^1.0.4",
+    "simplecrawler": "^1.1.2",
     "twitter": "^1.7.0"
   }
 }

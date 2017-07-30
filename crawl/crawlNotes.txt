@@ -1,0 +1,10 @@
+TO DO:
+
+consider recursion
+
+explore alternative approaches
+
+callbacks
+
+for loop over internalLinks within a for loop counter so that it only loops
+over internalLinks while pushing to it so many times :)

@@ -1,3 +1,16 @@
+TEXTSCRAPER:
+DRY up the code~
+
+
+
+
+
+
 Some people list URLs in their twitter profiles descriptions
 rather than in the profile URL space... consider adding functionality
 to find these urls and add them to our object.
+
+
+(missy's idea!) - 
+using recursion, copy the first array and cycle through it,
+popping the values to run the function on - keeping the original array, and adding to it if the indexof === -1
