@@ -4,9 +4,10 @@ var rp = require('request-promise')
 
 let masterLinkList = []
 let crawlThis = "http://reacttraining.com"
-var internalLinks =[]red
+var internalLinks =[]
 
 var scrapeLinks = (scrapeMe) => {
+  console.log(`our seed url is ${scrapeMe}`)
 
   // get the page to be scraped
   rp(scrapeMe, (err,resp,body) => {
@@ -35,7 +36,7 @@ var scrapeLinks = (scrapeMe) => {
   // end of request
 }).then(()=> {
 
-
+console.log(internalLinks)
 
 
 
