@@ -1,0 +1,41 @@
+1527476319.635119 client started (18526): version 2.7, socket /private/tmp/tmux-501/default, protocol 8
+1527476319.635182 on Darwin 17.5.0 Darwin Kernel Version 17.5.0: Fri Apr 13 19:32:32 PDT 2018; root:xnu-4570.51.2~1/RELEASE_X86_64; libevent 2.1.8-stable (select)
+1527476319.635236 socket is /private/tmp/tmux-501/default
+1527476319.635263 trying connect
+1527476319.635393 add peer 0x7fae41849c00: 6 (0x0)
+1527476319.637244 sending message 100 to peer 0x7fae41849c00 (4 bytes)
+1527476319.637285 sending message 101 to peer 0x7fae41849c00 (15 bytes)
+1527476319.637298 sending message 102 to peer 0x7fae41849c00 (13 bytes)
+1527476319.637308 sending message 108 to peer 0x7fae41849c00 (29 bytes)
+1527476319.637330 sending message 104 to peer 0x7fae41849c00 (0 bytes)
+1527476319.637340 sending message 107 to peer 0x7fae41849c00 (4 bytes)
+1527476319.637349 sending message 105 to peer 0x7fae41849c00 (28 bytes)
+1527476319.637409 sending message 105 to peer 0x7fae41849c00 (20 bytes)
+1527476319.637440 sending message 105 to peer 0x7fae41849c00 (16 bytes)
+1527476319.637489 sending message 105 to peer 0x7fae41849c00 (57 bytes)
+1527476319.637510 sending message 105 to peer 0x7fae41849c00 (76 bytes)
+1527476319.637521 sending message 105 to peer 0x7fae41849c00 (25 bytes)
+1527476319.637530 sending message 105 to peer 0x7fae41849c00 (53 bytes)
+1527476319.637539 sending message 105 to peer 0x7fae41849c00 (10 bytes)
+1527476319.637547 sending message 105 to peer 0x7fae41849c00 (66 bytes)
+1527476319.637556 sending message 105 to peer 0x7fae41849c00 (142 bytes)
+1527476319.637565 sending message 105 to peer 0x7fae41849c00 (33 bytes)
+1527476319.637573 sending message 105 to peer 0x7fae41849c00 (17 bytes)
+1527476319.637583 sending message 105 to peer 0x7fae41849c00 (14 bytes)
+1527476319.637591 sending message 105 to peer 0x7fae41849c00 (19 bytes)
+1527476319.637600 sending message 105 to peer 0x7fae41849c00 (17 bytes)
+1527476319.637609 sending message 105 to peer 0x7fae41849c00 (8 bytes)
+1527476319.637618 sending message 105 to peer 0x7fae41849c00 (13 bytes)
+1527476319.637626 sending message 105 to peer 0x7fae41849c00 (75 bytes)
+1527476319.637635 sending message 105 to peer 0x7fae41849c00 (24 bytes)
+1527476319.637644 sending message 105 to peer 0x7fae41849c00 (22 bytes)
+1527476319.637653 sending message 105 to peer 0x7fae41849c00 (23 bytes)
+1527476319.637662 sending message 106 to peer 0x7fae41849c00 (0 bytes)
+1527476319.637685 sending message 200 to peer 0x7fae41849c00 (4 bytes)
+1527476319.637694 client loop enter
+1527476319.643758 peer 0x7fae41849c00 message 207
+1527476319.643917 sending message 208 to peer 0x7fae41849c00 (0 bytes)
+1527486007.615032 peer 0x7fae41849c00 message 203
+1527486007.615460 sending message 205 to peer 0x7fae41849c00 (0 bytes)
+1527486007.615821 peer 0x7fae41849c00 message 204
+1527486007.615858 client loop exit
